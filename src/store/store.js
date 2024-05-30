@@ -35,7 +35,7 @@ constructor() {
     // return this.comments
     // }
     async loadCurrentUser(){
-        const  response = await axios.get(`https://backforprojectreact.onrender.com/api/users/me`, {
+        const  response = await axios.get(`https://backforprojectreact-1.onrender.com/api/users/me`, {
             headers: {
                 'x-auth-token': localStorage.getItem('token')
             }
@@ -52,7 +52,7 @@ constructor() {
     }
     async loadUserCollections(){
 
-    const response = await axios.get('https://backforprojectreact.onrender.com/api/collections/user', {
+    const response = await axios.get('https://backforprojectreact-1.onrender.com/api/collections/user', {
         headers: {
             'x-auth-token': localStorage.getItem('token')
         }

@@ -81,7 +81,7 @@ const Catalog = observer(() => {
         const token = localStorage.getItem('token');
 
         try {
-            await axios.delete(`http://localhost:5000/api/collections/${catalogId}/items/${id}`, {
+            await axios.delete(`https://backforprojectreact-1.onrender.com/api/collections/${catalogId}/items/${id}`, {
                 headers: {
                     'x-auth-token': token
                 }

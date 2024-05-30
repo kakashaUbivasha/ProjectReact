@@ -142,7 +142,7 @@ function CreateCatalog() {
         };
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.post('https://backforprojectreact.onrender.com/api/collections', collectionData, {
+            const response = await axios.post('https://backforprojectreact-1.onrender.com/api/collections', collectionData, {
                 headers: {
                     'x-auth-token': token,
                 },

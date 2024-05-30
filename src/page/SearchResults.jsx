@@ -13,7 +13,7 @@ function SearchResults(){
         allInfo.loadCurrentUser()
         async function handleSearch(){
             try{
-                const response = await axios.get(`https://backforprojectreact.onrender.com/api/search?q=${query}`);
+                const response = await axios.get(`https://backforprojectreact-1.onrender.com/api/search?q=${query}`);
                 setResult(response.data)
                 console.log(response)
             }

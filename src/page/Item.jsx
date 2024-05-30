@@ -15,7 +15,7 @@ function Item() {
 
         const fetchItemDetails = async () => {
             try {
-                const response = await axios.get(`https://backforprojectreact.onrender.com/api/collections/${id}/items/${item}`);
+                const response = await axios.get(`https://backforprojectreact-1.onrender.com/api/collections/${id}/items/${item}`);
                 setItemData(response.data)
             } catch (err) {
                 console.error(err)

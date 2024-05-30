@@ -12,7 +12,7 @@ const CreateComments = ({ itemId, collectionId,addClasses }) => {
     useEffect(() => {
         const fetchComments = async () => {
             try {
-                const response = await axios.get(`https://backforprojectreact.onrender.com/api/collections/${collectionId}/items/${itemId}`);
+                const response = await axios.get(`https://backforprojectreact-1.onrender.com/api/collections/${collectionId}/items/${itemId}`);
                 setComments(response.data.comments);
             } catch (error) {
                 console.error('Error fetching comments:', error);
