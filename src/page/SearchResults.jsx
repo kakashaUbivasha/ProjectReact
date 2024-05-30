@@ -48,7 +48,7 @@ function SearchResults(){
                 !result.length&&(
                     <div>
                         <p className="text-center text-xl">Упс, похоже мы ничего не нашли по ключевому слову <i>{query}</i>, попробуйти ввести что-нибудь другое</p>
-                        <img src="/public/unresult.jpg" alt="unresult" className="m-auto mt-5"/>
+                        <img src="https://flourishing-pithivier-3a8059.netlify.app/public/unresult.jpg" alt="unresult" className="m-auto mt-5"/>
                     </div>
 
                 )
