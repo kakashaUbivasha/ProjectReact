@@ -13,7 +13,7 @@ function Registration(){
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/users/register', {
+            const response = await axios.post('https://backforprojectreact.onrender.com/api/users/register', {
                 name: name,
                 email: email,
                 password: password,

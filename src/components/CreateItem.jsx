@@ -75,7 +75,7 @@ const CreateItem = () => {
         }
 
         try {
-            await axios.post(`http://localhost:5000/api/collections/${catalogId}/items`, itemData, {
+            await axios.post(`https://backforprojectreact.onrender.com/api/collections/${catalogId}/items`, itemData, {
                 headers: {
                     'x-auth-token': token
                 }

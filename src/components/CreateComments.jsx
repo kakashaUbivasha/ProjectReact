@@ -12,7 +12,7 @@ const CreateComments = ({ itemId, collectionId,addClasses }) => {
     useEffect(() => {
         const fetchComments = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/collections/${collectionId}/items/${itemId}`);
+                const response = await axios.get(`https://backforprojectreact.onrender.com/api/collections/${collectionId}/items/${itemId}`);
                 setComments(response.data.comments);
             } catch (error) {
                 console.error('Error fetching comments:', error);
@@ -22,7 +22,7 @@ const CreateComments = ({ itemId, collectionId,addClasses }) => {
         fetchComments();
 
         // Установить соединение WebSocket
-        ws.current = new WebSocket("ws://localhost:5000");
+        ws.current = new WebSocket("ws://backforprojectreact.onrender.com");
 
         ws.current.onopen = () => {
             console.log("WebSocket connection established");

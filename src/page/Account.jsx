@@ -16,7 +16,7 @@ function Account(){
         navigate(`/change-catalog/${catalogId}`)
     }
     const handleAdminRequest = () => {
-        axios.get(`http://localhost:5000/api/users/me`,{
+        axios.get(`https://backforprojectreact.onrender.com/api/users/me`,{
             headers: {
                 'x-auth-token': localStorage.getItem('token')
             }

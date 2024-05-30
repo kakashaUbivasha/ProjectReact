@@ -74,7 +74,7 @@ function ChangeItem(){
 
     const handleSubmit = async () => {
         try {
-            await axios.put(`http://localhost:5000/api/collections/${id}/items/${item}`, itemData, {
+            await axios.put(`https://backforprojectreact.onrender.com/api/collections/${id}/items/${item}`, itemData, {
                 headers: {
                     'x-auth-token': token
                 }

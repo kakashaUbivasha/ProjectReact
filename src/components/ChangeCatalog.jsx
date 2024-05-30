@@ -147,7 +147,7 @@ function ChangeCatalog(){
 
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.put(`http://localhost:5000/api/collections/${catalogId}`, collectionData, {
+            const response = await axios.put(`https://backforprojectreact.onrender.com/api/collections/${catalogId}`, collectionData, {
                 headers: {
                     'x-auth-token': token,
                 },

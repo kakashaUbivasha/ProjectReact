@@ -35,7 +35,7 @@ constructor() {
     // return this.comments
     // }
     async loadCurrentUser(){
-        const  response = await axios.get(`http://localhost:5000/api/users/me`, {
+        const  response = await axios.get(`https://backforprojectreact.onrender.com/api/users/me`, {
             headers: {
                 'x-auth-token': localStorage.getItem('token')
             }
@@ -52,7 +52,7 @@ constructor() {
     }
     async loadUserCollections(){
 
-    const response = await axios.get('http://localhost:5000/api/collections/user', {
+    const response = await axios.get('https://backforprojectreact.onrender.com/api/collections/user', {
         headers: {
             'x-auth-token': localStorage.getItem('token')
         }
@@ -65,28 +65,4 @@ constructor() {
         console.error('Error fetching user collections:', error);
     })
     }
-    // async loadComments(){
-    //     this.ws.current = new WebSocket("ws://localhost:5000");
-    //
-    //     this.ws.current.onopen = () => {
-    //         console.log("WebSocket connection established");
-    //     };
-    //
-    //     this.ws.current.onmessage = (event) => {
-    //         const message = JSON.parse(event.data);
-    //         if (message.error) {
-    //             console.error(message.error);
-    //         } else if (message.success) {
-    //             this.setComments(message.item.comments)
-    //         }
-    //     };
-    //
-    //     this.ws.current.onclose = () => {
-    //         console.log("WebSocket connection closed");
-    //     };
-    //
-    //     return () => {
-    //         ws.current.close();
-    //     };
-    // }
 }
