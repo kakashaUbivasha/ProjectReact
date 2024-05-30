@@ -2,7 +2,7 @@ import {useLocation, useNavigate} from "react-router-dom";
 import React, {useContext, useEffect, useState} from "react";
 import axios from "axios";
 import {Context} from "../main.jsx";
-
+import Unresult from "/public/unresult.jpg"
 function SearchResults(){
     const location = useLocation();
     const {allInfo} = useContext(Context)
@@ -48,7 +48,7 @@ function SearchResults(){
                 !result.length&&(
                     <div>
                         <p className="text-center text-xl">Упс, похоже мы ничего не нашли по ключевому слову <i>{query}</i>, попробуйти ввести что-нибудь другое</p>
-                        <img src="/public/unresult.jpg" alt="unresult" className="m-auto mt-5"/>
+                        <img src={Unresult} alt="unresult" className="m-auto mt-5"/>
                     </div>
 
                 )
