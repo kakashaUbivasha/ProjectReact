@@ -2,10 +2,10 @@ import {useNavigate, useParams} from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../main.jsx";
 import { observer } from "mobx-react";
-import Books from "https://flourishing-pithivier-3a8059.netlify.app/public/books.jpg"
-import Films from "https://flourishing-pithivier-3a8059.netlify.app/public/films.jpg"
-import Songs from "https://flourishing-pithivier-3a8059.netlify.app/public/songs.png"
-import Other from "https://flourishing-pithivier-3a8059.netlify.app/public/others.jpg"
+import Books from "/public/books.jpg"
+import Films from "/public/films.jpg"
+import Songs from "/public/songs.png"
+import Other from "/public/others.jpg"
 import Button from "../customInt/Button.jsx";
 import axios from "axios";
 
