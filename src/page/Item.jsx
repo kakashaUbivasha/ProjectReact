@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { Context } from "../main.jsx";
 import CreateComments from "../components/CreateComments.jsx";
-
+import Back from "/public/back5.jpg"
 function Item() {
     const { allInfo } = useContext(Context);
     const { catalogId, itemId } = useParams();
@@ -50,7 +50,7 @@ function Item() {
 
     return (
         <div className="relative min-h-[100vh]">
-            <img src="/public/back5.jpg" className="absolute inset-0 z-0 w-full h-full object-cover blur-sm" alt=""/>
+            <img src={Back} className="absolute inset-0 z-0 w-full h-full object-cover blur-sm" alt=""/>
             <div className=" relative z-10 w-[1200px] min-h-[100vh] pt-52 m-auto text-center shadow-lg bg-white bg-opacity-95">
                 <div className="flex flex-col items-center justify-between">
                     <h1 className="text-4xl font-bold mb-4">{itemData.title}</h1>
