@@ -63,7 +63,7 @@ function Account(){
         <div>
         <div className="mt-52 flex justify-between w-[1200px] m-auto shadow-md p-5">
             <div className="">
-                <img className="max-h-[100px]" src="https://flourishing-pithivier-3a8059.netlify.app/public/blank-profile-picture.webp" alt="picture"/>
+                <img className="max-h-[100px]" src="/public/blank-profile-picture.webp" alt="picture"/>
             </div>
             <div>
             <ul>
