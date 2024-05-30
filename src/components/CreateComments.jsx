@@ -22,7 +22,7 @@ const CreateComments = ({ itemId, collectionId,addClasses }) => {
         fetchComments();
 
         // Установить соединение WebSocket
-        ws.current = new WebSocket("ws://backforprojectreact.onrender.com");
+        ws.current = new WebSocket("wss://backforprojectreact-1.onrender.com");
 
         ws.current.onopen = () => {
             console.log("WebSocket connection established");
