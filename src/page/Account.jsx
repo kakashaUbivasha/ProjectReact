@@ -3,6 +3,7 @@ import {useContext, useEffect, useState} from "react";
 import { useNavigate, Link } from 'react-router-dom';
 import Button from "../customInt/Button.jsx";
 import {Context} from "../main.jsx";
+import Blank from "/public/blank-profile-picture.webp"
 function Account(){
     const {allInfo} =useContext(Context)
     const [currentUser, setCurrentUser] = useState({})
@@ -63,7 +64,7 @@ function Account(){
         <div>
         <div className="mt-52 flex justify-between w-[1200px] m-auto shadow-md p-5">
             <div className="">
-                <img className="max-h-[100px]" src="/public/blank-profile-picture.webp" alt="picture"/>
+                <img className="max-h-[100px]" src={Blank} alt="picture"/>
             </div>
             <div>
             <ul>
