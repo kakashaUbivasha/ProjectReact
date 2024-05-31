@@ -51,7 +51,7 @@ const Catalog = observer(() => {
         return (lolo.items || []).map((item, rowIndex) => (
             <tr key={rowIndex} className="">
                 <td className="py-2 px-4 border-b">{item.id}</td>
-                <td onClick={()=>toItem(item.id)} className="py-2 px-4 border-b cursor-pointer">{item.title}</td>
+                <td onClick={()=>toItem(item.id)} className="py-2 px-4 border-b cursor-pointer">{truncateString(item.title)}</td>
                 <td title={item.tags} className="py-2 px-4 border-b">{truncateString(item.tags)}</td>
                 {
                     Object.keys(lolo.customFields || {}).flatMap(field =>
