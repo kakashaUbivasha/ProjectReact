@@ -6,4 +6,5 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-  ссылка на задеплоиный проект <a href="https://flourishing-pithivier-3a8059.netlify.app/">ProjectReact</a>
+
+- ссылка на задеплоиный проект <a href="https://flourishing-pithivier-3a8059.netlify.app/">ProjectReact</a>
