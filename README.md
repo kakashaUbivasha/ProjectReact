@@ -8,3 +8,4 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 - ссылка на задеплоиный проект <a href="https://flourishing-pithivier-3a8059.netlify.app/">ProjectReact</a>
+P.S. есть небольшая задержка прежде чем данные придут, это особенности сервера 
